@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B1AD377-7089-4C2E-97CF-6E539A17C2B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Klinika.My.MyApplication</StartupObject>
+    <RootNamespace>Klinika</RootNamespace>
+    <AssemblyName>Klinika</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Klinika.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Klinika.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_3_61434.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_15_61446.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_2_61433.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_4_61435.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_5_61436.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_6_61437.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_14_61445.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_27_61458.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_18_61449.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_11_61442.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_21_61452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_13_61444.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_9_61440.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_33_61464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_7_61438.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_24_61455.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_28_61459.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_19_61450.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_12_61443.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_29_61460.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_30_61461.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_17_61448.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_23_61454.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_8_61439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_25_61456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_1_61432.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_20_61451 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_10_61441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_22_61453.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_16_61447.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_26_61457.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_31_61462.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_32_61463.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_20_61451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button-add_blue_68678.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button-cross_red_69065.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
